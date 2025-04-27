@@ -84,13 +84,13 @@ class DepthModel():
         if not os.path.exists(os.path.join(models_path,'AdaBins_nyu.pt')):
             print("..downloading AdaBins_nyu.pt")
             os.makedirs(models_path, exist_ok=True)
-            download_file("https://huggingface.co/deforum/AdaBins/resolve/main/AdaBins_nyu.pt", models_path)
+            download_file("https://huggingface.co/unfoldingpast/AdaBins_dup/resolve/main/AdaBins_nyu.pt", models_path)
         self.adabins_helper = InferenceHelper(models_path, dataset='nyu', device=self.device)
 
     def load_midas(self, models_path, half_precision=True):
         if not os.path.exists(os.path.join(models_path, 'dpt_large-midas-2f21e586.pt')):
             print("..downloading dpt_large-midas-2f21e586.pt")
-            download_file("https://huggingface.co/deforum/MiDaS/resolve/main/dpt_large-midas-2f21e586.pt", models_path)
+            download_file("https://huggingface.co/unfoldingpast/MiDaS_dup/resolve/main/dpt_large-midas-2f21e586.pt", models_path)
 
         self.midas_model = DPTDepthModel(
             path=os.path.join(models_path, "dpt_large-midas-2f21e586.pt"),

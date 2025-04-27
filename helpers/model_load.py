@@ -130,7 +130,7 @@ def load_model(root, load_on_run_all=True, check_sha256=True, map_location="cuda
             },
         "sd-v1-4.ckpt": {
             'sha256': 'fe4efff1e174c627256e44ec2991ba279b3816e364b49f9be2abc0b3ff3f8556',
-            'url': 'https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt',
+            'url': 'https://huggingface.co/unfoldingpast/stable-diffusion-v-1-4-original_duplicated/resolve/main/sd-v1-4.ckpt',
             'requires_login': False,
             },
         "sd-v1-3-full-ema.ckpt": {
